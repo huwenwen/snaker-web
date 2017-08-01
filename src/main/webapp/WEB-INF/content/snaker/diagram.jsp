@@ -18,7 +18,7 @@
 <script type="text/javascript">
     function addTaskActor(taskName) {
         var url = '${ctx}/snaker/task/actor/add?orderId=${orderId}&taskName=' + taskName;
-        var returnValue = window.showModalDialog(url,window,'dialogWidth:1000px;dialogHeight:600px');
+        var returnValue = window.open(url,window,'dialogWidth:1000px;dialogHeight:600px');
         if(returnValue) {
             $('#currentActorDIV').append(',' + returnValue);
         }

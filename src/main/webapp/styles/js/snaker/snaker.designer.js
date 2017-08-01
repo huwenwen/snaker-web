@@ -222,7 +222,7 @@
             if (!designer.config.editable) {
                 designer.util.tip(_rect, _o.props['name'].value);
             } else {
-                var returnValue = window.showModalDialog(designer.config.ctxPath + '/config/form?lookup=1',window,'dialogWidth:1000px;dialogHeight:600px');
+                var returnValue = window.open(designer.config.ctxPath + '/config/form?lookup=1',window,'dialogWidth:1000px;dialogHeight:600px');
                 if(returnValue) {
                     var formPath = "/config/form/use/" + returnValue;
                     _o.props.form.value = formPath;
@@ -237,7 +237,7 @@
         });
         _rect.dblclick(function(){
             if (designer.config.editable) {
-                var returnValue = window.showModalDialog(designer.config.ctxPath + '/config/form?lookup=1',window,'dialogWidth:1000px;dialogHeight:600px');
+                var returnValue = window.open(designer.config.ctxPath + '/config/form?lookup=1',window,'dialogWidth:1000px;dialogHeight:600px');
                 if(returnValue) {
                     var formPath = "/config/form/use/" + returnValue;
                     _o.props.form.value = formPath;

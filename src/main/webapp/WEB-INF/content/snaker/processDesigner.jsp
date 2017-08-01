@@ -37,7 +37,7 @@
 			});
 			
 			function saveModel(data) {
-				alert(data);
+			    console.log(data);
 				$.ajax({
 					type:'POST',
 					url:"${ctx}/snaker/process/deployXml",
